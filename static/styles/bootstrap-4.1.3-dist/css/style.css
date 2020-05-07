@@ -38,8 +38,8 @@ body{
     position: absolute;
     border-radius: 5px;
     z-index: 1;
-    top: 482px;
-    left: 30px;
+    top: 50%;
+    left: 8%;
     color: turquoise;
     text-transform: uppercase;
     display: inline-block;
@@ -159,83 +159,45 @@ h4{
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px){
     .caption {
-        top: 400px;
-        left: 85px;
+        left: 11%;
     }
     .caption h1{
         font-size: 80px;
     }
     #about{
         height: 1100px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
     }
     #languages{
         height: 600px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
     }
     #projects {
         height: 550px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
     }
     #amberstein_mobile{
-        width: 300px;
-        height: 400px;
         margin-left: 235px;
-        box-shadow: 2px 2px 2px 2px orange;
-        border-radius: 5px;
     }
 }
 /*iPad Pros */
 
-@media only screen and (min-device-width: 992px) and (max-device-width: 1200px){
+@media only screen and (min-width: 992px) and (max-width: 1200px){
     .caption {
-        top: 500px;
-        left: 220px;
+        top: 50%;
+        left: 20%;
     }
     .caption h1{
         font-size: 80px;
     }
     #about{
         height: 800px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 2rem;
-        margin-bottom: 1rem;
     }
     #languages{
         height: 600px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
     }
     #projects {
         height: 580px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
     }
     #amberstein_mobile{
-        width: 300px;
-        height: 400px;
         margin-left: 362px;
-        box-shadow: 2px 2px 2px 2px orange;
-        border-radius: 5px;
     }
     #contact{
         height: 1000px;
@@ -243,9 +205,9 @@ h4{
 }
 /*Desktops & Laptops*/
 
-@media only screen and (min-width: 1201px){
+@media only screen and (min-width: 1200px){
     .caption {
-        top: 900px;
+        top: 86%;
         left: 0px;
     }
     .caption h1{
@@ -253,26 +215,14 @@ h4{
     }
     #about{
         height: 600px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 2rem; 
-        margin: 0 0 1rem 0;
         text-align: left;
     }
     #languages{
         height: 500px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 2rem;
-        margin-bottom: 1rem;
         text-align: center;
     }
     #projects {
         height: 300px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 2rem;
-        margin: 0 0 1rem 0;
         text-align: left;
     }
     .heading-underline{
@@ -285,8 +235,8 @@ h4{
         width: 400px;
         height: 400px;
         position: absolute;
-        top: 650px;
-        right: 20px;
+        top: 60%;
+        right: 2%;
         box-shadow: 2px 2px 2px 2px orange;
         border-radius: 5px;
         display: inline-block;
@@ -305,66 +255,28 @@ h4{
         width: 200px;
     }
 }
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1824px){
     .caption {
-        top: 805px;
+        top: 88%;
         left: 0px;
     }
     #amberstein_desktop{
-        top: 520px;
-        right: 20px;
-    }
-}
-/*Large Screens*/
-
-@media only screen and (min-width: 1624px){
-    .caption {
-        top: 920px;
-        left: 0px;
-    }
-    .caption h1{
-        font-size: 100px;
+        top: 65%;
+        right: 7%;
     }
     #about{
         height: 600px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 3rem;
-        margin: 0 0 1rem 0;
-        text-align: left;
     }
     #languages{
         height: 550px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 3rem;
-        margin-bottom: 1rem;
-        text-align: center;
     }
     #video{
-        width: 340px!important;
-        height: 240px!important;
+        width: 500px!important;
+        height: 400px!important;
     }
     #projects {
         height: 500px;
-        color: white;
-        background-image:url(../../../img/webb-dark.png);
-        padding-top: 3rem;
-        margin-bottom: 1rem;
         text-align: center;
-    }
-    #amberstein_mobile{
-        display: none;
-    }
-    #amberstein_desktop{
-        width: 400px;
-        height: 400px;
-        position: absolute;
-        top: 600px;
-        right: 120px;
-        box-shadow: 2px 2px 2px 2px orange;
-        border-radius: 5px;
-        display: inline-block;
     }
     h1{
         font-size: 50px;
@@ -387,40 +299,6 @@ h4{
     }
     .heading-underline{
         margin: 0 0 20px 0;
-    }
-    img{
-        width: 300px;
-    }
-}
-@media only screen and (min-width: 2000px){
-    #projects{
-        height: 700px;
-    }
-    #video{
-        width: 600px!important;
-        height: 500px!important;
-    }
-}
-@media only screen and (min-width: 2560px){
-    .caption {
-        top: 1174px;
-        left: 0px;
-    }
-    #amberstein_desktop{
-        width: 400px;
-        height: 400px;
-        position: absolute;
-        top: 850px;
-        right: 140px;
-        box-shadow: 2px 2px 2px 2px orange;
-        border-radius: 5px;
-        display: inline-block;
-    }
-    #about{
-        height: 550px;
-    }
-    #languages{
-        height: 550px;
     }
     img{
         width: 400px;
