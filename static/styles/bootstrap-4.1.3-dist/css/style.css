@@ -305,6 +305,16 @@ h4{
         width: 200px;
     }
 }
+@media only screen and (min-width: 1280px){
+    .caption {
+        top: 805px;
+        left: 0px;
+    }
+    #amberstein_desktop{
+        top: 520px;
+        right: 20px;
+    }
+}
 /*Large Screens*/
 
 @media only screen and (min-width: 1624px){
