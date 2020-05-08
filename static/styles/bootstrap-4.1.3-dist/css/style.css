@@ -142,8 +142,8 @@ hr.socket{
     height: 400px;
     box-shadow: 2px 2px 2px 2px orange;
     border-radius: 5px;
-    margin-top: 5%;
-    margin-left: 10%;
+    margin: auto;
+    display: block;
 }
 h1{
     font-size: 40px;
@@ -172,9 +172,6 @@ h4{
     #projects {
         height: 550px;
     }
-    #amberstein_mobile{
-        margin-left: 30%;
-    }
 }
 /*iPad Pros */
 
@@ -193,9 +190,6 @@ h4{
     }
     #contact{
         height: 1000px;
-    }
-    #amberstein_mobile{
-        margin-left: 35%;
     }
 }
 /*Desktops & Laptops*/
@@ -220,7 +214,7 @@ h4{
         margin: 0 0 20px 0;
     }
     #contact{
-        height: 1200px;
+        height: 1400px;
         color: white;
         background: url(../../../img/amberstein2.jpg);
         background-size: cover;
@@ -235,8 +229,11 @@ h4{
     }
     #amberstein_mobile{
         width: 700px;
-        margin-top: 22%;
-        margin-left: 25%;
+        height: 400px;
+        box-shadow: 2px 2px 2px 2px orange;
+        border-radius: 5px;
+        margin: 20% auto;
+        display: block;
     }
 }
 @media only screen and (min-width: 1824px){
