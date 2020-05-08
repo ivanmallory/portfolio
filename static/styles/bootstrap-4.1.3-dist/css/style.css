@@ -114,7 +114,6 @@ img{
     color: white;
     background-color: black;
 }
-
 footer .row{
     background-color: rgba(0, 0, 0 , 0.8)!important;
     margin: 20px;
@@ -141,9 +140,10 @@ hr.socket{
 #amberstein_mobile{
     width: 300px;
     height: 400px;
-    margin-left: 35px;
     box-shadow: 2px 2px 2px 2px orange;
     border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 h1{
     font-size: 40px;
@@ -173,7 +173,7 @@ h4{
         height: 550px;
     }
     #amberstein_mobile{
-        margin-left: 235px;
+        margin-left: 30%;
     }
 }
 /*iPad Pros */
@@ -191,11 +191,11 @@ h4{
     #projects {
         height: 580px;
     }
-    #amberstein_mobile{
-        margin-left: 362px;
-    }
     #contact{
         height: 1000px;
+    }
+    #amberstein_mobile{
+        margin-left: 35%;
     }
 }
 /*Desktops & Laptops*/
@@ -234,8 +234,9 @@ h4{
         width: 200px;
     }
     #amberstein_mobile{
-        margin-left: 39%;
-        margin-top: 20%;
+        width: 700px;
+        margin-top: 22%;
+        margin-left: 25%;
     }
 }
 @media only screen and (min-width: 1824px){
@@ -305,6 +306,9 @@ h4{
     }
     img{
         width: 400px;
+    }
+    #contact{
+        background-position: 30% 30%;
     }
 }
 
