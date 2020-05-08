@@ -47,6 +47,7 @@ body{
     text-transform: uppercase;
     background-color: rgba(0, 0, 0 , 0.6)!important;
 }
+
 .home-inner{
     background-image: url(../../../img/ivan_guitar.jpg);
 }
@@ -177,7 +178,7 @@ h4{
 
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     .caption h1{
-        font-size: 80px;
+        font-size: 100px;
     }
     #about{
         height: 800px;
@@ -239,15 +240,10 @@ h4{
 @media only screen and (min-width: 1824px){
     .caption {
         padding: 15px;
-        width: 35%;
-        max-width: 35%;
-        position: absolute;
-        border-radius: 5px;
+        width: 50%;
+        max-width: 50%;
         z-index: 1;
-        top: 89%;
-        color: turquoise;
-        text-transform: uppercase;
-        background-color: rgba(0, 0, 0 , 0.6)!important;
+        top: 85.5%;
     }
     #amberstein_mobile{
         display: none;
@@ -255,8 +251,8 @@ h4{
     #amberstein_desktop{
         width: 20%;
         max-width: 20%;
-        height: 30%;
-        max-height: 30%;
+        height: 37%;
+        max-height: 37%;
         position: absolute;
         top: 60%;
         right: 4%;
@@ -302,13 +298,41 @@ h4{
         margin: 0 0 20px 0;
     }
     img{
-        width: 400px;
+        width: 300px;
     }
     #contact{
         background-position: 30% 30%;
     }
 }
-
-
+@media only screen and (min-width: 2267px){
+    .caption {
+        padding: 15px;
+        width: 35%;
+        max-width: 35%;
+        position: absolute;
+        border-radius: 5px;
+        z-index: 1;
+        top: 85.5%;
+        color: turquoise;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0 , 0.6)!important;
+    }
+    #amberstein_desktop{
+        width: 20%;
+        max-width: 20%;
+        height: 30%;
+        max-height: 30%;
+        position: absolute;
+        top: 60%;
+        right: 4%;
+        z-index: 1;
+        box-shadow: 2px 2px 2px 2px orange;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    img{
+        width: 400px;
+    }
+}
 
 
