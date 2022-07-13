@@ -66,6 +66,7 @@ body{
 img{
     width: 300px;
     border: 10px solid turquoise;
+    border-radius: 50%;
     
 }
 .languages-underline, .heading-underline, .contact-underline{
