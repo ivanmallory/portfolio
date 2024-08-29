@@ -35,17 +35,20 @@ body{
     color: turquoise;
 }
 .caption {
-    font-family: 'Permanent Marker', cursive;
-    padding: 15px;
-    width: 100%;
     max-width: 100%;
+    width: 100%;
+    padding: 20px;
     position: absolute;
-    border-radius: 5px;
     z-index: 1;
     top: 50%;
+}
+.name{
+    font-family: 'Permanent Marker', cursive;
+    padding: 15px;
+    border-radius: 10px;
     color: turquoise;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0 , 0.6)!important;
+    background-color: rgba(0, 0, 0 , 0.8)!important;
 }
 
 .home-inner{
@@ -65,7 +68,7 @@ body{
 }
 img{
     width: 300px;
-    border: 10px solid turquoise;
+    border: 5px solid turquoise;
     border-radius: 50%;
     
 }
@@ -128,10 +131,10 @@ img{
 #button:hover{
     background-color: white;
     color: black;
-    box-shadow: 1px 1px 1px 1px turquoise;
+    box-shadow: 0px 0px 2px 2px turquoise;
 }
 #contact{
-    height: 900px;
+    height: 1000px;
     color: white;
     background-color: black;
 }
@@ -155,14 +158,13 @@ hr.socket{
     margin-top: 1rem;
     color: turquoise;
 }
+
 #amberstein_desktop{
     display: none;
 }
 #amberstein_mobile{
-    width: 300px;
-    height: 400px;
-    box-shadow: 2px 2px 2px 2px orange;
-    border-radius: 5px;
+    width: 60%;
+    height: 525px;
     margin: auto;
     display: block;
 }
@@ -181,7 +183,7 @@ h4{
 /*iPads*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px){
-    .caption h1{
+    .name{
         font-size: 80px;
     }
     #about{
@@ -197,7 +199,7 @@ h4{
 /*iPad Pros */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px){
-    .caption h1{
+    .name{
         font-size: 100px;
     }
     #about{
@@ -216,7 +218,7 @@ h4{
 /*Desktops & Laptops*/
 
 @media only screen and (min-width: 1200px){
-    .caption h1{
+    .name{
         font-size: 100px;
     }
     #about{
@@ -251,10 +253,7 @@ h4{
     #amberstein_mobile{
         width: 700px;
         height: 400px;
-        box-shadow: 2px 2px 2px 2px orange;
-        border-radius: 5px;
         margin: 15% auto;
-        display: block;
     }
 }
 @media only screen and (min-width: 1824px){
@@ -271,14 +270,12 @@ h4{
     #amberstein_desktop{
         width: 20%;
         max-width: 20%;
-        height: 37%;
-        max-height: 37%;
+        height: 575px;
+        max-height: 100%;
         position: absolute;
-        top: 60%;
-        right: 4%;
+        top: 53%;
+        right: 1%;
         z-index: 1;
-        box-shadow: 2px 2px 2px 2px orange;
-        border-radius: 5px;
         display: inline-block;
     }
     #about{
@@ -325,36 +322,11 @@ h4{
     }
 }
 @media only screen and (min-width: 2267px){
-    .caption {
-        padding: 15px;
-        width: 35%;
-        max-width: 35%;
-        position: absolute;
-        border-radius: 5px;
-        z-index: 1;
-        top: 85.5%;
-        color: turquoise;
-        text-transform: uppercase;
-        background-color: rgba(0, 0, 0 , 0.6)!important;
-    }
     #about{
         height: 520px;
     }
     #languages{
         height: 560px;
-    }
-    #amberstein_desktop{
-        width: 20%;
-        max-width: 20%;
-        height: 30%;
-        max-height: 30%;
-        position: absolute;
-        top: 60%;
-        right: 4%;
-        z-index: 1;
-        box-shadow: 2px 2px 2px 2px orange;
-        border-radius: 5px;
-        display: inline-block;
     }
     img{
         width: 400px;
