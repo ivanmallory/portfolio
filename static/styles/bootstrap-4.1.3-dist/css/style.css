@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    background-color: #DA0463;
+}
+.background{
+    display: none;
+}
+[class*="col-"]{
+    margin: 15px!important;
+}
+.col-sm-12{
+    flex: 0 0 80%!important;
+}
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(0, 0, 0 , 0.6)!important;
+}
+.navbar h1{
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid white;
+}
+.navbar h1:hover{
+    color: turquoise;
+    border: 2px solid turquoise;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding: .8rem;
+    margin-left: 20px;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: turquoise;
+}
+.caption {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+}
+.name{
+    font-family: 'Permanent Marker', cursive;
+    padding: 15px;
+    border-radius: 10px;
+    color: turquoise;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0 , 0.8)!important;
+}
+
+.home-inner{
+    background-image: url(../../../img/ivan_guitar.jpg);
+}
+#about{
+    height: 2100px;
+    color: white;
+    background-image:url(../../../img/webb-dark.png);
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#about span{
+    color: turquoise;
+    font-size: larger;
+}
+img{
+    width: 300px;
+    border: 3px solid turquoise;
+    /* border: 5px solid turquoise;
+    border-radius: 50%; */
+    
+}
+.middle-pics{
+    width: 90%;
+}
+.languages-header-underline, .languages-underline, .heading-underline, .projects-underline, .contact-underline{
+    height: .2rem;
+    background-color: #DA0463;
+    margin: 20px auto;
+}
+.card{
+    margin: 0 auto;
+    background-color: #404B69!important;
+    border: none!important;
+    box-shadow: 9px 5px 15px -3px rgba(211, 211, 211, 0.7)!important;
+}
+.heading-underline{
+    width: 8.5rem;
+}
+.languages-header-underline{
+    width: 11.5rem;
+}
+.languages-underline{
+    width: 9rem;
+}
+.projects-underline{
+    width: 11.5rem;
+}
+.contact-underline{
+    width: 17rem;
+    background-color: turquoise;
+}
+#languages{
+    height: 1600px;
+    color: white;
+    background-image:url(../../../img/webb-dark.png);
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#html, #css, #js, #python, #java{
+    font-size: 2rem;
+    margin: 20px auto;
+}
+#html{
+    color: #f16529;
+}
+#css{
+    color:#1572b6;
+}
+#js{
+    color: #eddc1d;
+}
+#python{
+    color: skyblue;
+}
+#java{
+    color: #ea2d2e;
+}
+#projects {
+    height: 1200px;
+    color: white;
+    background-image:url(../../../img/webb-dark.png);
+    padding-top: 2rem;
+    text-align: center;
+}
+.description{
+    font-style: italic;
+}
+#video{
+    width: 300px;
+    height: 200px;
+}
+#button{
+    background-color: turquoise;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+}
+#button:hover{
+    color: black;
+    box-shadow: 0px 0px 2px 2px white;
+    cursor: pointer;
+}
+#contact{
+    height: 1000px;
+    color: white;
+    background-color: black;
+}
+footer .row{
+    background-color: rgba(0, 0, 0 , 0.8)!important;
+    margin: 20px;
+    padding: 20px;
+}
+footer a{
+    color: white;
+    display: inline-block;
+    width: 42px!important;
+    height: 42px!important;
+    margin: 10px;
+}
+footer a:hover{
+    color: turquoise!important;
+}
+footer svg.svg-inline--fa{
+    font-size: 3rem;
+}
+footer svg.svg-inline--fa:hover{
+    color: turquoise!important;
+
+}
+hr.socket{
+    width: 100%;
+    margin-top: 1rem;
+    color: turquoise;
+}
+
+#amberstein_desktop{
+    display: none;
+}
+#amberstein_mobile{
+    width: 60%;
+    height: 525px;
+    margin: auto;
+    display: block;
+}
+h1{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 20px;
+}
+#project_info_right{
+    display: none;
+}
+/*iPads*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px){
+    .background{
+        background-color: black;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    .name{
+        font-size: 80px;
+    }
+    #about{
+        height: 1200px;
+        background: none;
+    }
+    #languages{
+        height: 900px;
+        background: none;
+    }
+    #projects {
+        height: 1200px;
+        background: none;
+    }
+}
+/*iPad Pros */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .background{
+        background-color: black;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    .name{
+        font-size: 100px;
+    }
+    #about{
+        height: 700px;
+        background: none;
+    }
+    img{
+        width: 200px;
+    }
+    #languages{
+        height: 1100px;
+        background: none;
+    }
+    #projects {
+        height: 600px;
+        background: none;
+    }
+    #contact{
+        height: 1000px;
+    }
+}
+/*Desktops & Laptops*/
+
+@media only screen and (min-width: 1200px){
+    .background{
+        background-color: black;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    .xxl-col-4{
+        flex-basis: 1475px!important;
+    }
+    .name{
+        font-size: 100px;
+    }
+    .about{
+        justify-content: center!important;
+    }
+    #about{
+        height: 700px;
+        background: none;
+    }
+    #languages{
+        height: 500px;
+        text-align: center;
+        background: none;
+    }
+    #projects {
+        height: 600px;
+        text-align: left;
+        background: none;
+    }
+    .projects-underline{
+        margin: 20px 0;
+    }
+    .languages-underline{
+        width: 8rem;
+    }
+    #contact{
+        height: 1200px;
+        color: white;
+        background: url(../../../img/amberstein2.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #html, #css, #js, #python, #java{
+        font-size: 4rem;
+        text-align: center;
+    }
+    img{
+        width: 225px;
+    }
+    #amberstein_mobile{
+        width: 600px;
+        margin: 6rem auto;
+    }
+}
+@media only screen and (min-width: 1600px){
+    img{
+        width: 250px;
+    }
+}
+@media only screen and (min-width: 1824px){
+    .background{
+        background-color: black;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    .xxl-col-4{
+        flex-basis: 450px!important;
+        text-align: left;
+    }
+    .caption {
+        padding: 15px;
+        width: 50%;
+        max-width: 50%;
+        z-index: 1;
+        top: 85.5%;
+    }
+    #amberstein_mobile{
+        display: none;
+    }
+    #amberstein_desktop{
+        width: 20%;
+        max-width: 20%;
+        height: 575px;
+        max-height: 100%;
+        position: absolute;
+        top: 50%;
+        right: 1%;
+        z-index: 1;
+        display: inline-block;
+    }
+    #about{
+        height: 700px;
+        background: none;
+    }
+    #languages{
+        height: 580px;
+        background: none;
+    }
+    .languages-header-underline{
+        width: 14.5rem;
+    }
+    .languages-underline{
+        width: 11.5rem;
+    }
+    #video{
+        width: 500px!important;
+        height: 400px!important;
+    }
+    #projects {
+        height: 650px;
+        text-align: center;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 28px;
+    }
+    p{
+        font-size: 20px;
+    }
+    #project_info_left{
+        display: none;
+    }
+    #project_info_right{
+        display: inline-block;
+        text-align: left;
+    }
+    .heading-underline{
+        margin: 0 0 20px 0;
+    }
+    img{
+        width: 300px;
+    }
+    #contact{
+        background-position: 30% 30%;
+    }
+}
+@media only screen and (min-width: 2267px){
+    [class*="col-"]{
+        margin: 0px 15px!important;
+    }
+    .xxl-col-4{
+        flex-basis: 600px!important;
+        text-align: left;
+    }
+    .background{
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    #amberstein_desktop{
+        top: 52%;
+    }
+    #about{
+        height: 500px;
+    }
+
+    #languages{
+        height: 560px;
+    }
+    img{
+        width: 400px;
+        size: 60%;
+    }
+    .middle-pics{
+        width: 275px;
+    }
+}
+
+
