@@ -81,7 +81,13 @@ img{
     border: 3px solid turquoise;
     /* border: 5px solid turquoise;
     border-radius: 50%; */
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
     
+}
+img:hover{
+    transform: scale(1.1);
 }
 .middle-pics{
     width: 90%;
