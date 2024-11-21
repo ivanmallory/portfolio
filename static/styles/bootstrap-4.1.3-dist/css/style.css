@@ -65,7 +65,6 @@ body{
     background-image: url(../../../img/ivan_guitar.jpg);
 }
 #about{
-    height: 2100px;
     color: white;
     background-image:url(../../../img/webb-dark.png);
     padding-top: 2rem;
@@ -79,8 +78,6 @@ body{
 img{
     width: 300px;
     border: 3px solid turquoise;
-    /* border: 5px solid turquoise;
-    border-radius: 50%; */
     -webkit-transition-property: all;
     -webkit-transition-duration: 0.5s;
     -webkit-transition-timing-function: ease;
@@ -88,9 +85,6 @@ img{
 }
 img:hover{
     transform: scale(1.1);
-}
-.middle-pics{
-    width: 90%;
 }
 .languages-header-underline, .languages-underline, .heading-underline, .projects-underline, .contact-underline{
     height: .2rem;
@@ -103,6 +97,14 @@ img:hover{
     border: none!important;
     box-shadow: 9px 5px 15px -3px rgba(211, 211, 211, 0.7)!important;
 }
+.card:hover {
+    .languages-underline{
+        transform: scale(1.2);
+    }
+    #html, #css, #js, #python, #java{
+        transform: scale(1.2);
+    }
+}
 .heading-underline{
     width: 8.5rem;
 }
@@ -111,6 +113,9 @@ img:hover{
 }
 .languages-underline{
     width: 9rem;
+    -webkit-transition-property: all!important;
+    -webkit-transition-duration: 0.5s!important;
+    -webkit-transition-timing-function: ease!important;
 }
 .projects-underline{
     width: 11.5rem;
@@ -120,7 +125,6 @@ img:hover{
     background-color: turquoise;
 }
 #languages{
-    height: 1600px;
     color: white;
     background-image:url(../../../img/webb-dark.png);
     padding-top: 2rem;
@@ -130,6 +134,9 @@ img:hover{
 #html, #css, #js, #python, #java{
     font-size: 2rem;
     margin: 20px auto;
+    -webkit-transition-property: all!important;
+    -webkit-transition-duration: 0.5s!important;
+    -webkit-transition-timing-function: ease!important;
 }
 #html{
     color: #f16529;
@@ -147,7 +154,6 @@ img:hover{
     color: #ea2d2e;
 }
 #projects {
-    height: 1200px;
     color: white;
     background-image:url(../../../img/webb-dark.png);
     padding-top: 2rem;
@@ -169,8 +175,8 @@ img:hover{
     border: none;
 }
 #button:hover{
-    color: black;
-    box-shadow: 0px 0px 2px 2px white;
+    color: #404B69;
+    box-shadow: 0px 1px 4px 2px rgba(211, 211, 211, 0.7);
     cursor: pointer;
 }
 #contact{
@@ -244,15 +250,12 @@ h4{
         font-size: 80px;
     }
     #about{
-        height: 1200px;
         background: none;
     }
     #languages{
-        height: 900px;
         background: none;
     }
     #projects {
-        height: 1200px;
         background: none;
     }
 }
@@ -273,23 +276,20 @@ h4{
         font-size: 100px;
     }
     #about{
-        height: 700px;
         background: none;
     }
     img{
         width: 200px;
     }
     #languages{
-        height: 1100px;
         background: none;
     }
     #projects {
-        height: 600px;
         background: none;
     }
-    #contact{
+    /* #contact{
         height: 1000px;
-    }
+    } */
 }
 /*Desktops & Laptops*/
 
@@ -314,16 +314,13 @@ h4{
         justify-content: center!important;
     }
     #about{
-        height: 700px;
         background: none;
     }
     #languages{
-        height: 500px;
         text-align: center;
         background: none;
     }
     #projects {
-        height: 600px;
         text-align: left;
         background: none;
     }
@@ -334,7 +331,6 @@ h4{
         width: 8rem;
     }
     #contact{
-        height: 1200px;
         color: white;
         background: url(../../../img/amberstein2.jpg);
         background-size: cover;
@@ -394,11 +390,9 @@ h4{
         display: inline-block;
     }
     #about{
-        height: 700px;
         background: none;
     }
     #languages{
-        height: 580px;
         background: none;
     }
     .languages-header-underline{
@@ -412,7 +406,6 @@ h4{
         height: 400px!important;
     }
     #projects {
-        height: 650px;
         text-align: center;
     }
     h1{
@@ -464,19 +457,19 @@ h4{
     #amberstein_desktop{
         top: 52%;
     }
-    #about{
+    /* #about{
         height: 500px;
     }
 
     #languages{
         height: 560px;
-    }
+    } */
     img{
         width: 400px;
         size: 60%;
     }
     .middle-pics{
-        width: 275px;
+        width: 80%;
     }
 }
 
