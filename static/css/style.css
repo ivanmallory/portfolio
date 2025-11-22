@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 70px;
+    scroll-behavior:smooth;
 }
 body{
     overflow-x: hidden;
+    position: relative;
     font-family: 'Lato', sans-serif;
-    background-color: #DA0463;
+    background-color: black;
 }
 .background{
     display: none;
 }
 [class*="col-"]{
-    margin: 15px!important;
-}
-.col-sm-12{
-    flex: 0 0 80%!important;
+    padding: 15px;
 }
 .navbar{
     text-transform: uppercase;
@@ -25,8 +22,12 @@ body{
     letter-spacing: .1rem;
     background-color: rgba(0, 0, 0 , 0.6)!important;
 }
+.navbar-brand{
+    margin-left: 20px;
+}
 .navbar h1{
     border-radius: 10px;
+    margin: 0px;
     padding: 5px;
     text-align: center;
     border: 2px solid white;
@@ -37,24 +38,27 @@ body{
 }
 .navbar-dark .navbar-nav .nav-link{
     color: white;
-    padding: .8rem;
-    margin-left: 20px;
+    padding: 5px!important;
+    margin: 0 20px;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end!important;
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
     color: turquoise;
 }
 .caption {
-    max-width: 100%;
     width: 100%;
     padding: 20px;
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 8%;
 }
 .name{
     font-family: 'Permanent Marker', cursive;
     padding: 15px;
+    font-size: 40px;
     border-radius: 10px;
     color: turquoise;
     text-transform: uppercase;
@@ -62,13 +66,14 @@ body{
 }
 
 .home-inner{
-    background-image: url(../../../img/ivan_guitar.jpg);
+    background-image: url(../img/ivan_guitar.jpg);
 }
-#about{
+#about, #languages, #projects{
     color: white;
-    background-image:url(../../../img/webb-dark.png);
-    padding-top: 2rem;
-    margin-bottom: 1rem;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23404b69' fill-opacity='0.49' fill-rule='evenodd'/%3E%3C/svg%3E");
+    padding-top: 4rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 #about span{
@@ -89,10 +94,11 @@ img:hover{
 .languages-header-underline, .languages-underline, .heading-underline, .projects-underline, .contact-underline{
     height: .2rem;
     background-color: #DA0463;
-    margin: 20px auto;
+    margin: 20px auto!important;
 }
 .card{
-    margin: 0 auto;
+    color: white;
+    margin: 1rem;
     background-color: #404B69!important;
     border: none!important;
     box-shadow: 9px 5px 15px -3px rgba(211, 211, 211, 0.7)!important;
@@ -120,16 +126,10 @@ img:hover{
 .projects-underline{
     width: 11.5rem;
 }
+
 .contact-underline{
     width: 17rem;
     background-color: turquoise;
-}
-#languages{
-    color: white;
-    background-image:url(../../../img/webb-dark.png);
-    padding-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
 }
 #html, #css, #js, #python, #java{
     font-size: 2rem;
@@ -153,12 +153,6 @@ img:hover{
 #java{
     color: #ea2d2e;
 }
-#projects {
-    color: white;
-    background-image:url(../../../img/webb-dark.png);
-    padding-top: 2rem;
-    text-align: center;
-}
 .description{
     font-style: italic;
 }
@@ -179,15 +173,20 @@ img:hover{
     box-shadow: 0px 1px 4px 2px rgba(211, 211, 211, 0.7);
     cursor: pointer;
 }
+.divider{
+    height: 0.5rem;
+    background-color: rgb(218, 4, 99);
+}
 #contact{
-    height: 1000px;
+    height: 100vh;
     color: white;
     background-color: black;
 }
 footer .row{
     background-color: rgba(0, 0, 0 , 0.8)!important;
     margin: 20px;
-    padding: 20px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 footer a{
     color: white;
@@ -216,16 +215,16 @@ hr.socket{
     display: none;
 }
 #amberstein_mobile{
-    width: 60%;
     height: 525px;
+    width: 75%;
     margin: auto;
     display: block;
 }
 h1{
     font-size: 40px;
 }
-h3{
-    font-size: 30px;
+.about h3{
+    font-size: 20px;
 }
 h4{
     font-size: 20px;
@@ -246,8 +245,20 @@ h4{
         left: 0;
         z-index: -2;
     }
+    .caption {
+        width: 80%;
+        left: 10%;
+        top: 10%;
+        padding: 15px;
+    }
+    .divider{
+        display: none;
+    }
+    h3{
+        font-size: 30px;
+    }
     .name{
-        font-size: 80px;
+        font-size: 70px;
     }
     #about{
         background: none;
@@ -257,6 +268,9 @@ h4{
     }
     #projects {
         background: none;
+    }
+    #amberstein_mobile{
+        width: 50%;
     }
 }
 /*iPad Pros */
@@ -272,8 +286,16 @@ h4{
         left: 0;
         z-index: -2;
     }
+    .caption {
+        top: 12%;
+        left: 15%;
+        width: 70%;
+    }
+    h3{
+        font-size: 30px;
+    }
     .name{
-        font-size: 100px;
+        font-size: 80px;
     }
     #about{
         background: none;
@@ -286,10 +308,17 @@ h4{
     }
     #projects {
         background: none;
+        text-align: left;
     }
-    /* #contact{
-        height: 1000px;
-    } */
+    .projects-underline{
+        margin-left: 0px!important;
+    }
+    .divider{
+        display: none;
+    }
+    #amberstein_mobile{
+        width: 50%;
+    }
 }
 /*Desktops & Laptops*/
 
@@ -304,14 +333,16 @@ h4{
         left: 0;
         z-index: -2;
     }
-    .xxl-col-4{
-        flex-basis: 1475px!important;
+    .caption {
+        top: 14%;
+        left: 15%;
+        width: 70%;
+    }
+    h3{
+        font-size: 30px;
     }
     .name{
         font-size: 100px;
-    }
-    .about{
-        justify-content: center!important;
     }
     #about{
         background: none;
@@ -320,19 +351,19 @@ h4{
         text-align: center;
         background: none;
     }
+    .languages-underline{
+        width: 8rem;
+    }
     #projects {
         text-align: left;
         background: none;
     }
     .projects-underline{
-        margin: 20px 0;
-    }
-    .languages-underline{
-        width: 8rem;
+        margin-left: 0px!important;
     }
     #contact{
         color: white;
-        background: url(../../../img/amberstein2.jpg);
+        background: url(../img/amberstein2.jpg);
         background-size: cover;
         background-position: 50% 50%;
     }
@@ -341,16 +372,30 @@ h4{
         text-align: center;
     }
     img{
-        width: 225px;
+        width: 90%;
+    }
+    .divider{
+        display: none;
     }
     #amberstein_mobile{
         width: 600px;
         margin: 6rem auto;
     }
 }
-@media only screen and (min-width: 1600px){
-    img{
-        width: 250px;
+@media only screen and (min-width: 1400px){
+    .caption{
+        top: 15%;
+        width: 60%;
+        left: 20%;
+    }
+    h3{
+        font-size: 20px;
+    }
+    #about{
+        text-align: left;
+    }
+    .heading-underline{
+        margin-left: 0px!important;
     }
 }
 @media only screen and (min-width: 1824px){
@@ -364,30 +409,27 @@ h4{
         left: 0;
         z-index: -2;
     }
-    .xxl-col-4{
-        flex-basis: 450px!important;
-        text-align: left;
-    }
     .caption {
         padding: 15px;
         width: 50%;
-        max-width: 50%;
-        z-index: 1;
-        top: 85.5%;
+        top: 23%;
+        left: 0;
     }
     #amberstein_mobile{
         display: none;
     }
     #amberstein_desktop{
         width: 20%;
-        max-width: 20%;
         height: 575px;
-        max-height: 100%;
         position: absolute;
-        top: 50%;
+        top: 13%;
         right: 1%;
         z-index: 1;
         display: inline-block;
+    }
+    #about, #languages, #projects, footer .row{
+        padding-top: 4.5rem;
+        padding-bottom: 2rem;
     }
     #about{
         background: none;
@@ -412,7 +454,7 @@ h4{
         font-size: 50px;
     }
     h3{
-        font-size: 40px;
+        font-size: 30px!important;
     }
     h4{
         font-size: 28px;
@@ -430,21 +472,11 @@ h4{
     .heading-underline{
         margin: 0 0 20px 0;
     }
-    img{
-        width: 300px;
-    }
     #contact{
         background-position: 30% 30%;
     }
 }
 @media only screen and (min-width: 2267px){
-    [class*="col-"]{
-        margin: 0px 15px!important;
-    }
-    .xxl-col-4{
-        flex-basis: 600px!important;
-        text-align: left;
-    }
     .background{
         background-color: black;
         height: 100%;
@@ -454,22 +486,11 @@ h4{
         left: 0;
         z-index: -2;
     }
+    .caption{
+        top: 24%;
+    }
     #amberstein_desktop{
-        top: 52%;
-    }
-    /* #about{
-        height: 500px;
-    }
-
-    #languages{
-        height: 560px;
-    } */
-    img{
-        width: 400px;
-        size: 60%;
-    }
-    .middle-pics{
-        width: 80%;
+        top: 14%;
     }
 }
 
