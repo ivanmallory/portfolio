@@ -1,19 +1,9 @@
-/*--- Extra Bootstrap Column Padding --*/
-[class*="col-"] {
-  padding: 1rem;
-}
-
 /*--- Bootstrap Mobile Gutter Fix --*/
 .row, .container-fluid {
-  margin-left: 0px!important;
-  margin-right: 0px!important;
+  margin-left: 10px!important;
+  margin-right: 10px!important;
   margin-top: 0px!important;
   margin-bottom: 0px!important;
-}
-
-/*--- Fix for Fixed Navbar jumping on scroll --*/
-.fixed-top {
-  -webkit-backface-visibility: hidden;
 }
 
 /*--- Fixed Landing Page Section --*/
